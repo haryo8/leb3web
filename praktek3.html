@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> praktek 3 </title>
+  <link rel="stylesheet" href="style.css">
+  
+<style> 
+
+    body {
+      background-image: url(login.pn);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-image: url(bg2.png);
+    }
+    #card {
+        background: #fbfbfb;
+        border-radius: 8px;
+        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+        height: 410px;
+        margin: 6rem auto 8.1rem auto;
+        width: 500px;
+        background-image: url(bg1.png);
+    } 
+
+
+    .demo{background: #2c2c54; }
+.text-effect{
+    color: #fff;
+    font-family: 'Monoton', cursive;
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+.text-effect span{ animation: animate linear 2000ms infinite; }
+.text-effect span:nth-child(1n){ animation-delay: 0s; }
+.text-effect span:nth-child(2n){ animation-delay: 100ms; }
+.text-effect span:nth-child(3n){ animation-delay: 200ms; }
+.text-effect span:nth-child(4n){ animation-delay: 300ms; }
+.text-effect span:nth-child(5n){ animation-delay: 400ms; }
+.text-effect span:nth-child(6n){ animation-delay: 500ms; }
+.text-effect span:nth-child(7n){ animation-delay: 600ms; }
+.text-effect span:nth-child(8n){ animation-delay: 700ms; }
+.text-effect span:nth-child(9n){ animation-delay: 800ms; }
+.text-effect span:nth-child(10n){ animation-delay: 900ms; }
+@keyframes animate{
+    0%{ opacity: 0.3; }
+    100%{
+       opacity:1;
+       text-shadow: 0 0 80px Red,0 0 30px orange,0 0 6px DarkRed;
+    }
+}
+@media only screen and (max-width: 990px){
+    .text-effect{ font-size: 65px; }
+}
+@media only screen and (max-width: 767px){
+    .text-effect{ font-size: 50px; }
+}
+@media only screen and (max-width: 479px){
+    .text-effect{ font-size: 36px; }
+}
+@media only screen and (max-width: 359px){
+    .text-effect{ font-size: 27px; }
+}
+
+
+</style>
+  
+
+</head>
+<body>
+
+
+
+
+<div id="card"> 
+  <br>
+ <h5 style="text-align: center; font-variant:small-caps;"> FROM PENYEWAAN LAPANGAN FUTSAL </h5>
+<table>
+<p>
+  <tr>
+    <label for="transaksi">&nbsp;&nbsp;&nbsp; no transaksi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+    &nbsp;&nbsp;&nbsp;<input type="text" id="transaksi" name="transaksi">
+  </tr>
+</p>
+<p>
+  <tr> 
+    <label for="tgl_sewa">&nbsp;&nbsp;&nbsp; tangal sewa&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp; &nbsp;&nbsp;</label>
+    <input type="date" id="date" name="tgl_sewa">
+  </tr>
+</p>
+<p>
+  <tr>
+    <label for="cust"> &nbsp;&nbsp;&nbsp;&nbsp;nama penyewa &nbsp;:&nbsp;&nbsp;&nbsp; </label>
+    <input type="text" id="cust" name=" nama penyewa">
+  </tr>
+</p>
+<p>
+  <tr>
+    <label for="jam_sewa"> &nbsp;&nbsp;&nbsp;&nbsp;jam sewa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp; </label>
+    <select>
+      <option nama="1jam" value="1jam"> 1 jam </option>
+      <option nama="2jam" value="2jam"> 2 jam </option>
+      <option nama="3jam" value="3jam"> 3 jam </option>
+      <option nama="4jam" value="4jam"> 4 jam </option>
+    </select>
+  </tr>
+</p>
+<p>
+  <tr>
+    <label for="lapangan">&nbsp;&nbsp;&nbsp; lapangan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;&nbsp;&nbsp; </label>
+    <form>
+    <select name="lapangan" size="4">
+      <option value="1">lapangan A</option>
+      <option value="2">lapangan B</option>
+      <option value="3">lapangan C</option>
+      <option value="4">lapangan D</option>
+      <option value="5">lapangan E</option>
+      <option value="6">lapangan F</option>
+    </select>
+    </form>
+  </tr>
+</p>
+</table>
+</div>
+<div class="text-effect">
+    <span>h</span>
+    <span>a</span>
+    <span>r</span>
+    <span>y</span>
+    <span>o</span>
+ 
+    </div>
+</body>
