@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> praktek 3 </title>
+  
+<style> 
+
+    body {
+      background-image: url(login.pn);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    #card {
+        background: #fbfbfb;
+        border-radius: 8px;
+        box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+        height: 410px;
+        margin: 6rem auto 8.1rem auto;
+        width: 500px;
+    } 
+
+</style>
+  
+
+</head>
+<body>
+<div id="card"> 
+  <br>
+ <h5 style="text-align: center; font-variant:small-caps;"> FROM PENYEWAAN LAPANGAN FUTSAL </h5>
+<table>
+<p>
+  <tr>
+    <label for="transaksi"> transaksi : </label>
+    <input type="text" id="transaksi" name="transaksi">
+  </tr>
+</p>
+<p>
+  <tr> 
+    <label for="tgl_sewa"> tangal sewa : </label>
+    <input type="date" id="date" name="tgl_sewa">
+  </tr>
+</p>
+<p>
+  <tr>
+    <label for="cust"> nama penyewa : </label>
+    <input type="text" id="cust" name=" nama penyewa">
+  </tr>
+</p>
+<p>
+  <tr>
+    <label for="jam_sewa"> jam sewa : </label>
+    <select>
+      <option nama="1jam" value="1jam"> 1 jam </option>
+      <option nama="2jam" value="2jam"> 2 jam </option>
+      <option nama="3jam" value="3jam"> 3 jam </option>
+      <option nama="4jam" value="4jam"> 4 jam </option>
+    </select>
+  </tr>
+</p>
+<p>
+  <tr>
+    <label for="lapangan"> lapangan :  </label>
+    <form>
+    <select name="lapangan" size="4">
+      <option value="1">lapangan A</option>
+      <option value="2">lapangan B</option>
+      <option value="3">lapangan C</option>
+      <option value="4">lapangan D</option>
+      <option value="5">lapangan E</option>
+      <option value="6">lapangan F</option>
+    </select>
+    </form>
+  </tr>
+</p>
+</table>
+</div>
+</body>
+</html>
